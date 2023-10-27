@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Inter",sans-serif;
+}
+
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 8px;
+	height: 8px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #a5b4fc;
+}
+
+.slidRight{
+	opacity: 0;
+	animation: slidRight 8s ease 1.5s 1 forwards;
+}
+
+
+@keyframes slidRight {
+	0%{
+		right:300%;
+		visibility: visible;
+		opacity: 0;
+	}
+	10%{
+		right:120%;
+		visibility: visible;
+		opacity: 1;
+	}
+	50%{
+		right:120%;
+		visibility: visible;
+		opacity: 1;
+	}
+	100%{
+		right:300%;
+		visibility: hidden;
+		opacity: 0;
+		display: none;
+	}
+}
+
+
+/* Add styles for when the radio input is selected */
+.bookingDate:checked + .hi{
+	border: 1px solid #6366f1;
+	background-color: #6366f1;
+	color:#fff;
+}
+
+body{
+	height: 100vh;
+	overflow: hidden;
+}
