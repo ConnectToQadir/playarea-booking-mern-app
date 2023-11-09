@@ -34,7 +34,7 @@ const userSchema = new Schema({
   isActive: {
     type: Boolean,
     default: true,
-    select: false,
+    required:true
   }
 },{timestamps:true});
 
