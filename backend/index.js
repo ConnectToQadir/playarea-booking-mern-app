@@ -32,7 +32,7 @@ app.get("/", function (req, res) {
 });
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/playease")
+  .connect("mongodb+srv://info:Y8gORoh2XZzPKufo@edify-college.ajku8l8.mongodb.net/playease?retryWrites=true&w=majority")
   .then(() => console.log("Connected!"))
   .catch(() => {
     console.log("Note Connected!");
